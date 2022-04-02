@@ -25,7 +25,7 @@
 +	free(titlestack[tstki]);
 +	if (pop) {
 +		titlestack[tstki] = NULL;
-+		tstki = (tstki - 1 + TITLESTACKSIZE) % TITLESTACKSIZE;
++		tstki = (tstkai - 1 + TITLESTACKSIZE) % TITLESTACKSIZE;
 +		p = titlestack[tstki] ? titlestack[tstki] : opt_title;
 +	} else if (p) {
 +		titlestack[tstki] = xstrdup(p);
