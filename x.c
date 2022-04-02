@@ -1634,12 +1634,12 @@ xseticontitle(char *p)
 void
 xfreetitlestack(void)
 {
-
 	for (int i = 0; i < LEN(titlestack); i++) {
 		free(titlestack[i]);
 		titlestack[i] = NULL;
 	}
 }
+
 void 
 xsettitle(char *p, int pop)
 {
